@@ -134,10 +134,8 @@ class FJSPEnv(gym.Env):
             mac:
                 Number of all neighboring operations
                 Average processing time of all neighboring operations
-                Number of remaining neighboring operations
                 Earliest idle time
                 Processing status
-                Remaining processing time to complete the current assigned operation
         '''
 
         curr_proc_batch = torch.zeros(size=(self.batch_size, num_jobs, num_mas))
